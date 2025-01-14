@@ -4,14 +4,6 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: Arial, sans-serif;
-    background-color: #f9f5f0;
-    background-image: url('pattern-bg.png'); 
-    background-repeat: repeat;
-    color: #4a3b2f;
-    overflow-x: hidden;
-}
 
 header {
     background-color: #5c3b23;
@@ -73,51 +65,70 @@ header nav a:hover {
 }
 
 main {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container1 {
     text-align: center;
-    padding: 50px 20px;
 }
 
-.logo-img {
-    width: 100px;
-    margin: 20px auto;
+.landingmain{
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;   
+                
 }
 
-.title {
-    font-size: 3rem;
-    color: #b32e16;
-    margin-bottom: 20px;
-    font-family: 'Georgia', serif;
+.mainlogo {
+    position:absolute;
+    top: 17%;
+    right: 57%;
+    transform: translateX(80%);
+    width:200px;
+
 }
 
-.subtitle {
-    font-size: 1.2rem;
-    margin-bottom: 30px;
+.titlelogo {
+    width: 50%;
 }
+
+.subtitle{
+    color: #53382F;
+    font-family: Qanelas;
+    font-size: 25px;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 20px ;
+}
+
+
 
 .search-bar {
-    margin-top: 30px;
+    position: relative;
+    margin-top: 8px;
 }
 
 .search-bar input {
-    padding: 10px 15px;
-    width: 300px;
-    border: 2px solid #ccc;
-    border-radius: 25px 0 0 25px;
-    font-size: 1rem;
-}
-
-.search-bar button {
-    padding: 10px 20px;
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
     border: none;
-    background-color: #b32e16;
-    color: white;
-    font-size: 1rem;
-    border-radius: 0 25px 25px 0;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #a52d15;
+    border-radius: 13px;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #6a6a6a;
+    background: #DAD2C8;
+    width:30%;
 }
 
 .decor-leaf {
