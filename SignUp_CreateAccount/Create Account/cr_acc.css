@@ -37,6 +37,7 @@ body {
   .form-group {
     text-align: left;
     margin-bottom: 15px;
+    position: relative;
   }
   
   .form-group label {
@@ -64,17 +65,17 @@ body {
     color: #6a6a6a;
 }
 
-#togglePassword {
-  width: 20px;
-  height: 20px;
-  position: absolute;
-  top: 61%;
-  right:40%;
-  transform: translateY(-80%);
-  cursor: pointer;
-}
+  #togglePassword {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 85%;
+    right: 2%;
+    transform: translateY(-80%);
+    cursor: pointer;
+  }
 
-.form-group input:focus {
+  .form-group input:focus {
     border-bottom: 2px solid #ae1c14; 
 }
   
