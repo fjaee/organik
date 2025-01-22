@@ -13,13 +13,14 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 23px 30px;
+    padding: 9px 30px;
 }
 
 header .logo {
     font-size: 25px;
     font-family: Maragsa;
     color: #ffffff;
+    align-items: center;
 }
 
 header nav a {
@@ -80,11 +81,10 @@ header nav a:hover {
 }
 
 main {
-    padding-top: 50px;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 85vh;
 }
 
 .container1 {
@@ -101,7 +101,7 @@ main {
 }
 
 .titlelogo {
-    width: 50%;
+    width: 60%;
 }
 
 .subtitle{
@@ -153,6 +153,7 @@ main {
 }
 
 .features {
+    padding-top: 40px ;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -373,6 +374,7 @@ main {
     width: 100%;
     min-height: 100%;
     padding-top: 60%;
+    padding-bottom: 10%;
   }
 
   .text-column {
@@ -425,4 +427,120 @@ main {
   }
 
 
+  .organik-footer {
+    background-image: url("./images/footer.png");
+    background-position: center;
+    background-size: cover;
+    color: #fff; 
+    padding: 20px 40px;
+    height: 42vh;
+
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap;
+}
+
+.footer-left {
+  max-width: 50%;
+}
+
+.logo {
+  font-family: Maragsa;
+  color: #ffffff;
+  font-size: 40px;
+  font-weight: normal;
+  margin-left: 90px;
+  margin-top:10px;
+  margin-bottom: 20px;
+}
+
+.footer-left h3 {
+  font-family: Qanelas;
+  font-size: 23px;
+  font-weight: normal;
+  margin-left: 90px;
+}
+
+.privacy-links{
+  margin-top: 25px;
+}
+
+.link1 {
+  margin-top: 50px;
+  color: white;
+  text-decoration: none;
+  font-family: Qanelas;
+  font-weight: normal;
+  font-size: 15px;
+  margin-left: 90px;
+}
+
+.link2 {
+  margin-top: 10px;
+  color: white;
+  text-decoration: none;
+  font-family: Qanelas;
+  font-weight: normal;
+  font-size: 15px;
+}
+
+.privacy-links a:hover {
+  color: #EDC183;
+}
   
+.footer-right ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-right ul li {
+  margin: 10px 0;
+}
+
+.volun {
+  color: white;
+  text-decoration: none;
+  font-family: Qanelas;
+  font-weight: 700;
+  font-size: 23px;
+  margin-left: 157px;
+}
+
+
+.orgs {
+  color: white;
+  text-decoration: none;
+  font-family: Qanelas;
+  font-weight: 700;
+  font-size: 23px;
+  margin-left: 115px;
+}
+
+
+.home{
+  color: white;
+  text-decoration: none;
+  font-family: Qanelas;
+  font-weight: 700;
+  font-size: 23px;
+  margin-left: 195px;
+}
+
+.footer-right ul li a:hover {
+  color: #EDC183;
+}
+
+.footer-right p {
+  margin-top: 50px;
+  margin-right: 90px; 
+  color: white;
+  text-decoration: none;
+  font-family: Qanelas;
+  font-weight: normal;
+  font-size: 15px;
+}
