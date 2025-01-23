@@ -13,10 +13,11 @@ header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 9px 30px;
+    padding: 0px 30px;
 }
 
 header .logo {
+    padding-top:1%;
     font-size: 25px;
     font-family: Maragsa;
     color: #ffffff;
