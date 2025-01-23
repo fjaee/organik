@@ -377,27 +377,30 @@ main {
     width: 100%;
     height: 100%;
     padding-top: 60%;
-    padding-bottom: 10%;
+    padding-bottom: 5%;
   }
 
   .text-column {
     flex: 1; 
     display: flex;
-    justify-content: left;
-    align-items: left;
-  }
+    flex-direction: column;
+    justify-content: center; 
+    align-items: flex-start; 
+    padding: 20px; 
+}
 
- .photo-column {
+.photo-column {
     flex: 1; 
     display: flex;
-    justify-content: center;
-    align-items: center;
-  }
+    justify-content: center; 
+    align-items: center; 
+    padding: 20px; 
+}
 
  
   .text-column h1 {
     font-family: Qanelas;
-    font-size: 60px;
+    font-size: 50px;
     margin-left: 130px;
     color: #4a4a4a;
   }
@@ -426,9 +429,8 @@ main {
   
 
   .photo-column img {
-    max-width: 100%;
+    max-width: 80%;
     height: auto;
-    border-radius: 10px; 
   }
 
 
