@@ -29,7 +29,7 @@
     }
 
 </style>
-  <title>Organik - Setup Your Account</title>
+  <title>[For Org] - Setup Your Account</title>
   <link rel="stylesheet" href="cracc.css">
 </head>
 <body>
@@ -43,50 +43,35 @@
     <div class="right-section">
       <form>
         <div class="form-group">
-          <label for="college">College</label>
-          <select id="college" name="college">
-            <option value="">Select your college</option>
-            <option value="college1">College 1</option>
-            <option value="college2">College 2</option>
-          </select>
-        </div>
-        <div class="form-group">
-          <label for="student-no">Student No.</label>
-          <input type="text" id="student-no" name="student-no" required placeholder="PUPSIS number (e.g., 2020-12345-MN-0)">
+          <label for="student-no">Organization Name</label>
+          <input type="text" id="student-no" name="student-no" required placeholder="Enter the full registered name of your org">
         </div>
         
         <div class="form-group">
-          <label for="first-name">First Name</label>
-          <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+          <label for="first-name">Facebook Page</label>
+          <input type="text" id="first-name" name="first-name" required placeholder="Enter the link of your org’s Facebook page">
         </div>
         <div class="form-group">
-          <label for="last-name">Last Name</label>
-          <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+          <label for="last-name">Username</label>
+          <input type="text" id="last-name" name="last-name" required placeholder="Enter a unique username">
         </div>
         <div class="form-group">
-            <label for="username">Username</label>
-            <input type="text" id="username" required placeholder="Enter a unique username">
-        </div>
-        <div class="form-group">
-          <label for="email">Email</label>
-          <input type="email" id="email" name="email" required placeholder="Your email address here">
+            <label for="username">Email</label>
+            <input type="text" id="username" required placeholder="Your org’s email address here">
         </div>
         <div class="form-group">
           <label for="password">Password</label>
           <input type="password" id="password" name="password" placeholder="Set a strong, unique password">
           <img src="./images/eye-hide-svgrepo-com.png" id="togglePassword">
         </div>
+    
         <div class="form-group">
-          <label for="address">Address</label>
-          <input type="text" id="address" name="address" required placeholder="Your current address here">
-        </div>
-        <div class="form-group">
-          <label for="contact-number">Contact Number</label>
-          <input type="tel" id="contact-number" name="contact-number" required placeholder="Your 11-number contact">
-        </div>
-        <div class="form-group">
-          <label for="birthday">Birthday</label>
-          <input type="date" id="birthday" name="birthday">
+          <label for="college">College/Type</label>
+          <select id="college" name="college">
+            <option value="">Select the college your org is under</option>
+            <option value="college1">College 1</option>
+            <option value="college2">College 2</option>
+          </select>
         </div>
       </form>
     </div>
