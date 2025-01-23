@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('images/Background Pattern.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        animation: zoomInOut 15s infinite;
+    }
+
+    @keyframes zoomInOut {
+        0% {
+            background-size: 100%;
+        }
+        50% {
+            background-size: 110%; 
+        }
+        100% {
+            background-size: 100%; 
+        }
+    }
+
+</style>
+  <title>Organik - Setup Your Account</title>
+  <link rel="stylesheet" href="cr_acc.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">
+        <img class="logo" src="./images/OrganikLogo.png">
+    </div>
+    <a class="custom-subtitle">What are you creating <br>this account for?</a>
+    <div class="option1">
+      <button class="upload-btn">I'm a student</button>
+    </div>
+    <div class="option2">
+      <button class="upload-btn">For an organization</button>
+    </div>
+
+    </div>
+  </div>
+  <div class="navigation">
+    <span>1 of 3</span>
+    <button class="nav-btn">&rarr;</button>
+  </div>
+  <script src="cracc.js"></script>
+</body>
+</html>
