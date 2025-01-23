@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('images/Background Pattern.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        animation: zoomInOut 15s infinite;
+    }
+
+    @keyframes zoomInOut {
+        0% {
+            background-size: 100%;
+        }
+        50% {
+            background-size: 110%; 
+        }
+        100% {
+            background-size: 100%; 
+        }
+    }
+
+</style>
+  <title>Organik - Setup Your Account</title>
+  <link rel="stylesheet" href="cracc.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">
+        <img class="logo" src="./images/OrganikLogo.png">
+    </div>
+    <a class="custom-subtitle">Set up your account.</a>
+    </div>
+    <div class="right-section">
+      <form>
+        <div class="form-group">
+          <label for="college">College</label>
+          <select id="college" name="college">
+            <option value="">Select your college</option>
+            <option value="college1">College 1</option>
+            <option value="college2">College 2</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="student-no">Student No.</label>
+          <input type="text" id="student-no" name="student-no" required placeholder="PUPSIS number (e.g., 2020-12345-MN-0)">
+        </div>
+        
+        <div class="form-group">
+          <label for="first-name">First Name</label>
+          <input type="text" id="first-name" name="first-name" required placeholder="Enter your first name">
+        </div>
+        <div class="form-group">
+          <label for="last-name">Last Name</label>
+          <input type="text" id="last-name" name="last-name" required placeholder="Enter your last name">
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required placeholder="Enter a unique username">
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required placeholder="Your email address here">
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Set a strong, unique password">
+          <img src="./images/eye-hide-svgrepo-com.png" id="togglePassword">
+        </div>
+        <div class="form-group">
+          <label for="address">Address</label>
+          <input type="text" id="address" name="address" required placeholder="Your current address here">
+        </div>
+        <div class="form-group">
+          <label for="contact-number">Contact Number</label>
+          <input type="tel" id="contact-number" name="contact-number" required placeholder="Your 11-number contact">
+        </div>
+        <div class="form-group">
+          <label for="birthday">Birthday</label>
+          <input type="date" id="birthday" name="birthday">
+        </div>
+      </form>
+    </div>
+  </div>
+  <div class="navigation">
+    <button class="nav-btn">&larr;</button>
+    <span>2 of 3</span>
+    <button class="nav-btn">&rarr;</button>
+  </div>
+  <script src="cracc.js"></script>
+</body>
+</html>
