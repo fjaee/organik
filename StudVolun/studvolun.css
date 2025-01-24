@@ -91,62 +91,23 @@ main {
     height: 85vh;
 }
 
-.container1 {
-    text-align: center;
-}
-
-.landingmain{
-    display: flex;
-    flex-direction: column; 
-    align-items: center;    
-    justify-content: center; 
-    text-align: center;   
-                
-}
-
-.titlelogo {
-    width: 60%;
-}
-
-.subtitle{
-    color: #53382F;
-    font-family: Qanelas;
-    font-size: 25px;
-    font-weight: 700;
-    padding-top: 8px;
-    padding-bottom: 20px ;
-}
-
-
-.search-bar {
-    position: relative;
-    margin-top: 8px;
-}
-
-.search-bar input {
-    padding-left: 14px;
-    padding-right: 14px;
-    padding-top: 12px;
-    padding-bottom: 12px;
-    margin-bottom: 14px;
-    border: none;
-    border-radius: 13px;
-    font-family: Qanelas;
-    font-size: 14px;
-    font-style: normal;
-    font-weight: 500;
-    color: #6a6a6a;
-    background: #DAD2C8;
-    width:37%;
-}
-
 main {
-  padding: 20px;
+  padding-top: 20%;
+  padding-bottom: 20%;
 }
 
 .listings h2 {
-  color: #6b3b16;
-  font-size: 2em;
+  font-family: Maragsa;
+  color: #A31B1B;
+  font-size: 3em;
+  font-weight: normal;
+}
+
+.listings p{
+  font-family: Qanelas;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 500;
 }
 
 .filters {
@@ -178,9 +139,9 @@ main {
   margin: auto;
   padding: 20px;
   border: 1px solid #ddd;
-  width: 80%;
-  max-width: 600px;
-  border-radius: 5px;
+  width: 70%;
+  height: 70%;
+  border-radius: 20px;
 }
 
 .modal-close {
@@ -199,11 +160,13 @@ main {
   cursor: pointer;
 }
 
+
+
 .cards {
   display: flex;
   flex-direction: column; 
   gap: 20px;
-  max-height: 500px; 
+  max-height: 350px; 
   overflow-y: auto;
   padding-right: 10px; 
   align-items: center;
@@ -274,7 +237,6 @@ main {
     color: #fff; 
     padding: 20px 40px;
     height: 41vh;
-
 }
 
 .footer-content {

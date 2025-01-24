@@ -55,7 +55,9 @@
     
 
     <main>
+
         <section class="listings">
+
           <h2>Aniks</h2>
           <p>
             Plant your impact in this community. Be part of the team behind-the-scenes.
@@ -78,49 +80,66 @@
           </div>
     
           <!-- Cards -->
-<div class="cards">
-    <div class="card" onclick="openModal(this)">
-      <h3>Event Photographer</h3>
-      <p><strong>AWS Cloud Club</strong></p>
-      <p><strong>AWS Community Day 2025</strong> • Jan 31, 1PM</p>
-      <p>Tags: <span>Operations</span> <span>Photography</span> <span>On-site</span></p>
-      <p><strong>Location:</strong> Amazon Web Services PH, BGC, Taguig</p>
-      <button>Accept</button>
-    </div>
-  
-    <div class="card" onclick="openModal(this)">
-      <h3>Network Support Technician</h3>
-      <p><strong>Cisco NetConnect</strong></p>
-      <p><strong>Basic Router Configuration Workshop</strong> • Feb 10, 9AM</p>
-      <p>Tags: <span>Tech</span> <span>On-site</span></p>
-      <p><strong>Expires:</strong> Feb 8</p>
-      <button>Accept</button>
-    </div>
-  
-    <div class="card" onclick="openModal(this)">
-      <h3>AI Resource Speaker</h3>
-      <p><strong>The Programmer’s Guild</strong></p>
-      <p><strong>Codyssey D1</strong> • Mar 15, 10AM</p>
-      <p>Tags: <span>Speaking</span> <span>Research</span> <span>Online</span></p>
-      <p><strong>Expires:</strong> Mar 8</p>
-      <button>Accept</button>
-    </div>
-  
-    <div class="card" onclick="openModal(this)">
-      <h3>Livestream Operator</h3>
-      <p><strong>Google Developer Groups on Campus</strong></p>
-      <p><strong>Expires:</strong> Apr 15</p>
-      <button>Accept</button>
-    </div>
-  </div>
-  
-  <!-- Modal -->
-  <div id="modal" class="modal" onclick="closeModal(event)">
-    <div class="modal-content">
-      <span id="modal-close" class="modal-close" onclick="closeModal(event)">&times;</span>
-      <div id="modal-body"></div>
-    </div>
-  </div>
+        <div class="cards">
+            <div class="card" onclick="openModal(this)">
+            <h3>Event Photographer</h3>
+            <p><strong>AWS Cloud Club</strong></p>
+            <p><strong>AWS Community Day 2025</strong> • Jan 31, 1PM</p>
+            <p>Tags: <span>Operations</span> <span>Photography</span> <span>On-site</span></p>
+            <p><strong>Location:</strong> Amazon Web Services PH, BGC, Taguig</p>
+            <p><strong>Expires:</strong> Feb 8</p>
+            <div class="additional-info" style="display: none;">
+                <p><strong>More Details:</strong> This event will require assistance with photoshoots and handling camera equipment.</p>
+                <p>Requirements: Basic photography knowledge and familiarity with camera settings.</p>
+                <button>Accept</button>
+              </div>
+            </div>
+        
+            <div class="card" onclick="openModal(this)">
+            <h3>Network Support Technician</h3>
+            <p><strong>Cisco NetConnect</strong></p>
+            <p><strong>Basic Router Configuration Workshop</strong> • Feb 10, 9AM</p>
+            <p>Tags: <span>Tech</span> <span>On-site</span></p>
+            <p><strong>Expires:</strong> Feb 8</p>
+            <div class="additional-info" style="display: none;">
+                <p><strong>More Details:</strong> This event will require assistance with photoshoots and handling camera equipment.</p>
+                <p>Requirements: Basic photography knowledge and familiarity with camera settings.</p>
+                <button>Accept</button>
+              </div>
+            </div>
+        
+            <div class="card" onclick="openModal(this)">
+            <h3>AI Resource Speaker</h3>
+            <p><strong>The Programmer’s Guild</strong></p>
+            <p><strong>Codyssey D1</strong> • Mar 15, 10AM</p>
+            <p>Tags: <span>Speaking</span> <span>Research</span> <span>Online</span></p>
+            <p><strong>Expires:</strong> Mar 8</p>
+            <div class="additional-info" style="display: none;">
+                <p><strong>More Details:</strong> This event will require assistance with photoshoots and handling camera equipment.</p>
+                <p>Requirements: Basic photography knowledge and familiarity with camera settings.</p>
+                <button>Accept</button>
+              </div>
+            </div>
+        
+            <div class="card" onclick="openModal(this)">
+            <h3>Livestream Operator</h3>
+            <p><strong>Google Developer Groups on Campus</strong></p>
+            <p><strong>Expires:</strong> Apr 15</p>
+            <div class="additional-info" style="display: none;">
+                <p><strong>More Details:</strong> This event will require assistance with photoshoots and handling camera equipment.</p>
+                <p>Requirements: Basic photography knowledge and familiarity with camera settings.</p>
+                <button>Accept</button>
+              </div>
+            </div>
+        </div>
+        
+        <!-- Modal -->
+        <div id="modal" class="modal" onclick="closeModal(event)">
+            <div class="modal-content">
+            <span id="modal-close" class="modal-close" onclick="closeModal(event)">&times;</span>
+            <div id="modal-body"></div>
+            </div>
+        </div>
   
         </section>
       </main>
