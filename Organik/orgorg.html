@@ -1,0 +1,179 @@
+<!-- THIS IS FOR THE ORGANIZATION, WHERE DIFFERENT ORGANIZATIONS IS DISPLAYED -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORG-Communities</title>
+    <link rel="stylesheet" href="css/orgorg.css">
+
+    <!-- THIS STYLE IS FOR THE BACKGROUND AND ITS ANIMATION -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('images/Background Pattern.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            animation: zoomInOut 15s infinite;
+        }
+         
+        @keyframes zoomInOut {
+            0% {
+                background-size: 100%; 
+            }
+            50% {
+                background-size: 110%; 
+            }
+            100% {
+                background-size: 100%;
+            }
+        }
+
+    </style>
+
+
+</head>
+<body>
+<!-- THIS HEADER SERVES AS THE NAVIGATION BAR -->
+  <header>
+    <div class="logo">Organik</div>
+    <nav>
+      <a href="org.html">Home</a>
+      <div class="dropdown volunteer">
+        <a href="#" class="dropdown-toggle">Volunteer</a>
+        <div class="dropdown-menu">
+          <a href="orgvolun.php">Opportunities</a>
+          <a href="orglisting.php">Listings</a>
+        </div>
+      </div>
+      <a href="orgorg.html">Organizations</a>
+      <div class="dropdown">
+        <span>.</span>
+        <div class="dropdown-menu">
+          <a href="orgProfile.php">Account</a>
+          <a href="loginO.html">Log out</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+    
+<!-- THIS SECTION DISPLAYS ALL THE ORGANIZATIONS AND ITS INFORMATION -->
+<main>
+    <div class="container">
+        <!-- Komunities Section -->
+        <section class="komunities">
+          <h1>Komunities</h1>
+          <h3 class="subheading">The roots of the community. The branches of the endless tree. Driving impact through united efforts and organic growth.</h3>
+          <div class="filter-bar">
+            <div class="filter-dropdown">
+              <label for="college">College:</label>
+              <select id="college">
+                <option>CCIS</option>
+                <option>COC</option>
+                <option>CPSPA</option>
+              </select>
+            </div>
+            <button class="sort-btn">Sort <span>&#x25BC;</span></button>
+          </div>
+          <div class="communities-grid">
+            <!-- Community Items -->
+            <div class="community-item" onclick="toggleInfo(this)">
+              <img src="images/Ellipse 1.png" alt="ASCI Logo">
+              <p>AWS Cloud Club</p>
+              <div class="community-info">
+                <p>This organization focuses on artificial intelligence integration and innovation, providing workshops and events for aspiring AI enthusiasts.</p>
+              </div>
+            </div>
+            <div class="community-item" onclick="toggleInfo(this)">
+              <img src="images/Ellipse 2.png" alt="AWS Logo">
+              <p>Google Developer Groups on Campus</p>
+              <div class="community-info">
+                <p>The AWS Cloud Club empowers students to explore cloud computing technologies, offering hands-on labs and certification opportunities.</p>
+              </div>
+            </div>
+            <div class="community-item" onclick="toggleInfo(this)">
+              <img src="images/Ellipse 3.png" alt="Cisco Logo">
+              <p>Cisco NetConnect</p>
+              <div class="community-info">
+                <p>This group bridges the gap between academic learning and professional networking, fostering the next generation of tech leaders.</p>
+              </div>
+            </div>
+            <div class="community-item" onclick="toggleInfo(this)">
+                <img src="images/Ellipse 4.png" alt="Cisco Logo">
+                <p>Institute of Bachelors in Information Technology Studies</p>
+                <div class="community-info">
+                  <p>This group bridges the gap between academic learning and professional networking, fostering the next generation of tech leaders.</p>
+                </div>
+              </div>
+              <div class="community-item" onclick="toggleInfo(this)">
+                <img src="images/Ellipse 5.png" alt="Cisco Logo">
+                <p>Cisco NetConnect</p>
+                <div class="community-info">
+                  <p>This group bridges the gap between academic learning and professional networking, fostering the next generation of tech leaders.</p>
+                </div>
+              </div>
+              <div class="community-item" onclick="toggleInfo(this)">
+                <img src="images/Ellipse 6.png"Cisco Logo">
+                <p>Association of Students for Computer Intelligence Integration</p>
+                <div class="community-info">
+                  <p>This group bridges the gap between academic learning and professional networking, fostering the next generation of tech leaders.</p>
+                </div>
+              </div>
+            <!-- Add more community items as needed -->
+          </div>
+        </section>
+    
+        <!-- Today's Pick Section -->
+        <section class="todays-pick">
+          <h2>Today's Pick</h2>
+          <div class="highlight">
+            <img src="images/Ellipse 3.png"Cisco Logo" class="highlight-img">
+            <div class="highlight-content">
+              <h3>Cisco NetConnect</h3>
+              <p class="college">College of Computer and Information Sciences</p>
+              <p class="description">
+                The Cisco NetConnect - PUP Manila student organization is a community committed to shaping the next generation of tech leaders and empowering members with the skills and knowledge necessary in networking, cybersecurity, and other related fields.
+              </p>
+              <p class="description">
+                At Cisco PUP, we bridge the gap between academic learning and the professional world, bringing together passionate individuals eager to push boundaries. We create opportunities for people to apply their existing knowledge in real-world scenarios, preparing them to face future challenges in the IT industry. We embrace creativity and help members explore new ideas and grow their skills while fostering a supportive and inclusive environment where they can build a network of peers.
+              </p>
+              <p class="description">
+                Through hands-on learning experiences like workshops and collaborative projects, Cisco PUP encourages innovation and allows everyone to develop practical skills that set them apart in the competitive tech world. Our commitment to quality and continual improvement ensures we strive to achieve the highest standards in all aspects of our work.
+                </p>
+            </div>
+          </div>
+        </section>
+      </div>
+</main>
+<!-- THE FOOTER -->
+    <footer class="organik-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1 class="logo">Organik</h1>
+                <h3> Organic communities.<br></h3>
+                <h3>Organic experiences.<br></h3>    
+                <h3>Organic growth.</h3>
+                <div class="privacy-links">
+                  <a class = "link1" href="#">Privacy Policy</a> | <a class = "link2" href="#">Terms of Service</a>
+                </div>
+              </div>
+              <div class="footer-right">
+                <ul>
+                  <li><a class = "home" href="org.html">Home</a></li>
+                  <li><a class = "volun" href="orgvolun.php">Volunteer</a></li>
+                  <li><a class = "orgs" href="orgorg.html">Organizations</a></li>
+                </ul>
+                <p>&copy; 2024 Organik. All Rights Reserved.</p>
+              </div>
+            </div>
+        </div>
+    </footer>
+    
+    <script src="js/studorg.js"></script>
+
+</body>
+</html>

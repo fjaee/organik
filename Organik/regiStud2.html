@@ -1,0 +1,66 @@
+<!-- THIS  IS THE INDIVIDUAL REGISTRATION PAGE   -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('images/Background Pattern.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        animation: zoomInOut 15s infinite;
+    }
+
+    @keyframes zoomInOut {
+        0% {
+            background-size: 100%;
+        }
+        50% {
+            background-size: 110%; 
+        }
+        100% {
+            background-size: 100%; 
+        }
+    }
+</style>
+<!-- THIS IS THE INDIVIDUAL REGISTRATION PAGE    -->
+  <title>[For Indiv] - Customize Your Profile</title>
+  <link rel="stylesheet" href="css/regiStud2.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">
+        <img class="logo" src="images/OrganikLogo.png">
+    </div>
+    <a class="custom-subtitle">Customize your profile.</a>
+    </div>
+    <div class="right-section">
+      <div class="profile-upload">
+        <div class="upload-container">
+          <img src="images/camera.png" alt="Camera Icon" class="icon">
+        </div>
+        <button class="upload-btn">Upload a photo</button>
+        <p class="upload-info">
+          Uploading a photo helps others<br>recognize you on Organik.
+        </p>
+      </div>
+      <div class="terms">
+        <input type="checkbox" id="terms">
+        <label for="terms">I agree to the Terms and Conditions.</label>
+      </div>
+      <button class="signup-btn">Sign up</button>
+    </div>
+  </div>
+  <div class="navigation">
+    <button class="nav-btn">&larr;</button>
+    <span>3 of 3</span>
+  </div>
+</body>
+</html>

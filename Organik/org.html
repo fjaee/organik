@@ -1,0 +1,201 @@
+<!-- THIS IS THE LANDING PAGE OF THE WEBSITE FOR ORGANIZATIONS -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organik</title>
+    <link rel="stylesheet" href="css/org.css">
+    <!-- THIS IS FOR THE BACKGROUND AND ITS ANIMATION -->
+    <style>
+    
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('images/Background Pattern.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            animation: zoomInOut 15s infinite;
+        }
+
+        @keyframes zoomInOut {
+            0% {
+                background-size: 100%; 
+            }
+            50% {
+                background-size: 110%; 
+            }
+            100% {
+                background-size: 100%;
+            }
+        } .cont1 {    
+                padding: 3vh ;
+                background: rgba(252, 239, 227, 0.22);
+                border-radius: 16px;
+                box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+                backdrop-filter: blur(4.7px);
+                -webkit-backdrop-filter: blur(4.7px);
+                border: 1px solid rgba(255, 204, 173, 0.43);
+              }
+
+    </style>
+
+</head>
+<body>
+<!-- THIS IS FOR THE HEADER OF THE WEBSITE  -->
+  <header>
+    <div class="logo">Organik</div>
+    <nav>
+      <a href="org.html">Home</a>
+      <div class="dropdown volunteer">
+        <a href="#" class="dropdown-toggle">Volunteer</a>
+        <div class="dropdown-menu">
+          <a href="orgvolun.php">Opportunities</a>
+          <a href="orglisting.php">Listings</a>
+        </div>
+      </div>
+      <a href="orgorg.html">Organizations</a>
+      <div class="dropdown">
+        <span>.</span>
+        <div class="dropdown-menu">
+          <a href="orgProfile.php">Account</a>
+          <a href="loginO.html">Log out</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+    
+<!-- THIS IS FOR THE MAIN CONTENT OF THE LANDING PAGE -->
+<main>
+    <div class = container1>
+        <div class = "landingmain">
+            <div class="titlelogo">
+                <img class = "titlelogo" src = ./images/logs.png>
+            </div>
+            <div class="subtitle">
+                Be part of the colorful community <br> of organizations at PUP. Join now!
+            </div>
+            
+        </div>
+            
+        <div class="search-bar">
+            <input type="text" placeholder="Search for opportunities here">
+        </div>
+    </div>   
+</main>
+
+    <section class="features">
+        <div class="section_one">
+            <img class="section_one_image" src="./images/Frame-38.png">
+        </div>
+        <div class="section_two">
+            <img class="section_two_image" src="./images/Frame-39.png">
+        </div>       
+        <div class="section_three">
+            <img class="section_three_image" src="./images/Frame-40.png">
+        </div>
+    </section>
+
+<!-- THE FRESH PICKS SECTION -->
+    <section class="container">
+        <p>Fresh Picks</p>
+        <div class="cards">
+          <div class="card">
+            <div class="icon">
+              <img src="./images/Ellipse 2.png" >
+            </div>
+            <h2>Livestream Operator</h2>
+            <p>Google Developer Groups on Campus</p>
+            <p>Assist in the technical works of our upcoming live event through managing our stream operation.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="./images/Ellipse 3.png">
+            </div>
+            <h2>Network Support Technician</h2>
+            <p>Cisco NetConnect</p>
+            <p>Facilitate hands-on activities with routing equipment and ensure seamless connectivity during the workshop.</p>
+            <button>Learn More</button>
+          </div>
+          <div class="card">
+            <div class="icon">
+              <img src="./images/Ellipse 1.png">
+            </div>
+            <h2>Event <br> Photographer</h2>
+            <p>AWS Cloud Club</p>
+            <p>Capture key moments and highlights of our event through compelling and high-quality photography.</p>
+            <button>Learn More</button>
+          </div>
+        </div>
+    </section>
+
+<!-- THIS SHOWS THE ORGANIZATIONS THAT HAS COLLABORATED WITH US -->
+    <section class="module parallax parallax-3" id="Orgs">
+        <section class="module content">
+            <p>Our Buds</p>
+            <div class="container">
+            <div class="banner">
+                <div class="slider" style="--quantity: 6">
+                    <div class="item" style="--position: 1"><img src="images/Ellipse 1.png" alt=""></div>
+                    <div class="item" style="--position: 2"><img src="images/Ellipse 2.png" alt=""></div>
+                    <div class="item" style="--position: 3"><img src="images/Ellipse 3.png" alt=""></div>
+                    <div class="item" style="--position: 4"><img src="images/Ellipse 4.png" alt=""></div>
+                    <div class="item" style="--position: 5"><img src="images/Ellipse 5.png" alt=""></div>
+                    <div class="item" style="--position: 6"><img src="images/Ellipse 6.png" alt=""></div>
+                </div>
+            </div>
+            </div>
+<!-- THIS IS THE TESTIMONIAL SECTION OF WHERE THE TESTIMONIALS GO -->
+  <div class="cont1">
+    <div class="testimonies">
+        <div class="text-column">
+            <div>
+                <h1>Organic Communities.</h1>
+                <h1>Organic Experiences.</h1>
+                <h1>Organic Growth.</h1>
+                <h2>
+                    “Organik has found me volunteer opportunities which <br>
+                    have helped to jumpstart my career. It’s allowed me to <br>
+                    gain numerous internship opportunities and hands-on <br>
+                    experience in the industry.”
+                </h2>
+                <h3>
+                    - Nehemiah Dizon, Data Analyst Intern at GCash
+                </h3>
+            </div>
+        </div>
+        <div class="photo-column">
+            <img src="images/Nem.png">
+        </div>
+    </div>
+    </div>
+<!-- THE FOOTER -->
+    <footer class="organik-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1 class="logo">Organik</h1>
+                <h3> Organic communities.<br></h3>
+                <h3>Organic experiences.<br></h3>    
+                <h3>Organic growth.</h3>
+                <div class="privacy-links">
+                  <a class = "link1" href="#">Privacy Policy</a> | <a class = "link2" href="#">Terms of Service</a>
+                </div>
+              </div>
+              <div class="footer-right">
+                <ul>
+                  <li><a class = "home" href="org.html">Home</a></li>
+                  <li><a class = "volun" href="orgvolun.php">Volunteer</a></li>
+                  <li><a class = "orgs" href="orgorg.html">Organizations</a></li>
+                </ul>
+                <p>&copy; 2024 Organik. All Rights Reserved.</p>
+              </div>
+            </div>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

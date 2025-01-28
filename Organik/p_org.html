@@ -1,0 +1,144 @@
+<!-- THIS IS THE ORGANIZATION PROFILE PAGE -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Organization Profile</title>
+    <link rel="stylesheet" href="css/p_org.css">
+    <!-- THIS IS FOR THE BACKGROUND AND ITS ANIMATION -->
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            background-image: url('images/Background Pattern.jpg');
+            background-size: cover; 
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed; 
+            animation: zoomInOut 15s infinite;
+        }
+        @keyframes zoomInOut {
+            0% {
+                background-size: 100%; 
+            }
+            50% {
+                background-size: 110%; 
+            }
+            100% {
+                background-size: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="logo">Organik</div>
+        <nav>
+          <a href="#">Home</a>
+          <div class="dropdown volunteer">
+            <a href="#" class="dropdown-toggle">Volunteer</a>
+            <div class="dropdown-menu">
+              <a href="#">Listings</a>
+              <a href="#">Opportunities</a>
+            </div>
+          </div>
+          <a href="#">Organizations</a>
+          <div class="dropdown">
+            <span>.</span>
+            <div class="dropdown-menu">
+              <a href="#">Account</a>
+              <a href="#">Settings</a>
+              <a href="#">Log out</a>
+            </div>
+          </div>
+        </nav>
+      </header>
+    <main>
+        <!-- THIS IS THE ORGANIZATION PROFILE CONTAINER -->
+        <div class="profile-container">
+            <div class="profile-header">
+                <img src="profile-placeholder.png" class="profile-pic">
+                <div>
+                    <h1>Google Developer Groups on Campus</h1>
+                    <p>@gdgpupmnl</p>
+                    <p>University-wide</p>
+                    <p>0 Aniks Listed</p>
+                </div>
+            </div>
+            <div class="profile-info">
+                <div>
+                    <label>Organization Name</label>
+                    <p contenteditable="true">Google Developer Groups on Campus</p>
+                </div>
+                <div>
+                    <label>Email</label>
+                    <p contenteditable="true">gdg.pupmnl@gmail.com
+                    </p>
+                </div>
+                <div>
+                    <label>Password</label>
+                    <p contenteditable="true" id="password">CathyMalakas</p>
+                    <img src="./images/eye-hide-svgrepo-com.png" id="togglePassword" alt="Toggle Password Visibility">
+                </div>
+                <div>
+                    <label>Link</label>
+                    <p contenteditable="true">https://www.facebook.com/gdg.pupmnl</p>
+                </div>
+            </div>
+            <div class="profile-actions">
+                <button id="edit-btn">Edit Profile</button>
+                <button id="delete-btn">Delete Profile</button>
+            </div>
+        </div>
+        <script>
+            document.getElementById('delete-btn').addEventListener('click', () => {
+                if (confirm('Are you sure you want to delete this profile?')) {
+                    document.querySelector('.profile-info p').remove();
+                }
+            });
+        </script>
+        <script>
+            let togglePassword = document.getElementById("togglePassword");
+            let password = document.getElementById("password");
+            let isHidden = true; 
+        
+            togglePassword.onclick = function () {
+                if (isHidden) {
+                    togglePassword.src = "./images/eye-show-svgrepo-com.png";
+                    password.style.webkitTextSecurity = "none"; 
+                } else {
+                    togglePassword.src = "./images/eye-hide-svgrepo-com.png";
+                    password.style.webkitTextSecurity = "disc"; 
+                }
+                isHidden = !isHidden; 
+            };
+        </script>
+    </main>
+
+    <footer class="organik-footer">
+        <div class="footer-content">
+            <div class="footer-left">
+                <h1 class="logo">Organik</h1>
+                <h3> Organic communities.<br></h3>
+                <h3>Organic experiences.<br></h3>    
+                <h3>Organic growth.</h3>
+                <div class="privacy-links">
+                  <a class = "link1" href="#">Privacy Policy</a> | <a class = "link2" href="#">Terms of Service</a>
+                </div>
+              </div>
+              <div class="footer-right">
+                <ul>
+                  <li><a class = "home" href="#">Home</a></li>
+                  <li><a class = "volun" href="#">Volunteer</a></li>
+                  <li><a class = "orgs" href="#">Organizations</a></li>
+                </ul>
+                <p>&copy; 2024 Organik. All Rights Reserved.</p>
+              </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>

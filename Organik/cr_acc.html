@@ -1,0 +1,66 @@
+<!-- THIS IS THE FIRST PAGE WHERE THE USER CHOOSES IF THEY ARE A STUDENT OR AN ORGANIZATION TO SETUP THEIR ACCOUNT -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- THIS IS FOR THE BACKGROUND AND ITS ANIMATION  -->
+  <style>
+    body {
+        margin: 0;
+        height: 100vh;
+        overflow: hidden;
+        background-image: url('images/Background Pattern.jpg');
+        background-size: cover; 
+        background-position: center; 
+        background-repeat: no-repeat;
+        background-attachment: fixed; 
+        animation: zoomInOut 15s infinite;
+    }
+    
+
+    @keyframes zoomInOut {
+        0% {
+            background-size: 100%;
+        }
+        50% {
+            background-size: 110%; 
+        }
+        100% {
+            background-size: 100%; 
+        }
+    }
+
+</style>
+<!--  THIS IS THE FIRST PAGE WHERE THE USER CHOOSES IF THEY ARE A STUDENT OR AN ORGANIZATION TO SETUP THEIR ACCOUNT -->
+  <title>Organik - Setup Your Account</title>
+  <link rel="stylesheet" href="css/cr_acc.css">
+</head>
+<body>
+  <div class="container">
+    <div class="left-section">
+      <div class="logo">
+        <img class="logo" src="images/OrganikLogo.png">
+    </div>
+    <a class="custom-subtitle">What are you creating <br>this account for?</a>
+    <div class="option1">
+      <a href="regiStud.php">
+       <button name="stud" class="upload-btn">I'm a student</button>
+      </a>
+    </div>
+    <div class="option2">
+      <a href="regiOrg.php">
+        <button name="org" class="upload-btn">For an organization</button>
+      </a>
+    </div>
+
+
+    </div>
+  </div>
+  <div class="navigation">
+    <span>1 of 2</span>
+    <button class="nav-btn">&rarr;</button>
+  </div>
+  <script src="js/regiStud.js"></script>
+</body>
+</html>
