@@ -1,0 +1,225 @@
+body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+    scale: 1.2;
+    padding: 3vh 3vh;
+    background: rgba(252, 239, 227, 0.22);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.7px);
+    -webkit-backdrop-filter: blur(4.7px);
+    border: 1px solid rgba(255, 204, 173, 0.43);
+}
+
+
+.header {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;    
+    justify-content: center; 
+    text-align: center;   
+                
+}
+
+.logo {
+    width: 500px;
+}
+
+.custom-subtitle{
+    color: #53382F;
+    font-family: Qanelas;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    padding-top: 8px;
+    padding-bottom: 30px ;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+input {
+    padding-left: 14px;
+    padding-right: 14px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    margin-bottom: 14px;
+    border: none;
+    border-radius: 13px;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #6a6a6a;
+    background: #DAD2C8;
+
+}
+
+.password-container {
+    position: relative;
+    width: 100%;
+}
+
+.email-container {
+    position: relative;
+    width: 100%;
+}
+
+#email{
+    width: 65%;
+
+}
+
+#password {
+    width: 65%;
+}
+
+
+#togglePassword {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 50%;
+    right: 17%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+
+.options {
+    text-align: center;
+    margin: .5rem 0;
+}
+
+.options label {
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #6a6a6a;
+}
+
+.submit-container {
+    position: relative;
+    width: 100%;
+}
+
+
+.login-button {
+    background-color: #A31B1B;
+    color: white;
+    padding: 11px;
+    width: 30%;
+    border: none;
+    border-radius: 80px;
+    font-family: Qanelas;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.login-button:hover {
+    background-color: #EDC183;   
+}
+
+.footer-links {
+    margin: 20px 0;
+}
+
+.dha {
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #6a6a6a;
+}
+
+.rn a {
+    text-decoration:none;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #A59C90
+   
+}
+
+.rn a:hover{
+    text-decoration: none;
+    color: #B18240;
+}
+
+.legal {
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+    font-size: 14px;
+    color: #6a6a6a;
+    padding-top: 50px;
+}
+
+.fp {
+    text-decoration:none;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #A59C90;  
+}
+
+.fp:hover{
+    text-decoration: none;
+    color: #B18240;
+}
+
+.pp {
+    text-decoration:none;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #A59C90;  
+}
+
+.pp:hover{
+    text-decoration: none;
+    color: #B18240;
+}
+
+.ts {
+    text-decoration:none;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #A59C90;  
+}
+
+.ts:hover{
+    text-decoration: none;
+    color: #B18240;
+}
+
+.cc {
+    text-decoration:none;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #A59C90;  
+}

@@ -1,0 +1,156 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: center;
+    height: 90vh;
+    padding-top: 10%;
+  }
+
+  .left-section {
+    width: 40%;
+    text-align: left;
+    padding-right: 20px;
+    margin-left:100px;
+  }
+  
+  .logo {
+    align-items: left;
+    width: 200px;
+}
+
+.custom-subtitle{
+    color: #53382F;
+    font-family: Qanelas;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 30px ;
+}
+  
+  
+  .subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #666;
+  }
+  
+  .right-section {
+    width: 60%;
+    padding-left: 10%;
+    text-align: center;
+  }
+  
+  
+  .upload-container {
+    width: 200px;
+    height: 200px;
+    border: 2px dashed #afafaf;
+    border-radius: 50%;
+    margin: 0 auto;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url("images/images.jpg");;
+    background-size: cover;
+  }
+  
+  .icon {
+    width: 50px;
+    opacity: 0.6;
+  }
+  
+  .upload-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    border: 2px solid #A31B1B;
+    background: transparent;
+    color: #A31B1B;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    border-radius: 20px;
+    cursor: pointer;
+  }
+  
+  .upload-btn:hover {
+    background: #A31B1B;
+    color: #fff;
+  }
+  
+  .upload-info {
+    font-family: Qanelas;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    color: #6a6a6a;
+    margin-top: 15px;
+    margin-bottom: 15%;
+  }
+  
+  .terms {
+    margin: 20px 0;
+  }
+  
+  .terms label {
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    color: #6a6a6a;
+  }
+  
+  .signup-btn {
+    background-color: #A31B1B;
+    color: white;
+    padding: 10px;
+    width: 35%;
+    border: none;
+    border-radius: 80px;
+    font-family: Qanelas;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    cursor: pointer;
+  }
+  
+  .signup-btn:hover {
+    background-color: #EDC183;
+  }
+  
+  .navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 1px;
+  }
+  
+  .nav-btn {
+    background: none;
+    border: none;
+    font-size: 40px;
+    color: #333;
+    cursor: pointer;
+    padding-left: 6%;
+  }
+  
+  .nav-btn:hover {
+    color: #A31B1B;
+  }
+  
+  span {
+    font-family: Qanelas;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    color: #333;
+    padding-right: 5%;
+  }
+  
